@@ -1,0 +1,47 @@
+﻿@model IEnumerable<CommunityAssistProject.Models.GrantType>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Grant Types</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GrantTypeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GrantTypeDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GrantTypemaximum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GrantTypeLifetimeMaximum)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.GrantTypeName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GrantTypeDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GrantTypemaximum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GrantTypeLifetimeMaximum)
+        </td>
+
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.GrantTypeKey }) |
+            @Html.ActionLink("Details", "Details", new { id = item.GrantTypeKey }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.GrantTypeKey })
+        </td>
+    </tr>
+}
+
+</table>
