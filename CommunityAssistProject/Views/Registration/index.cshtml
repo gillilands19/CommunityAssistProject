@@ -1,0 +1,28 @@
+﻿@model IEnumerable<CommunityAssistProject.Models.Person>
+@{
+    ViewBag.Title = "index";
+}
+
+<h2>People</h2>
+
+<table class="table">
+    <tr>
+        <th><@Html.DisplayNameFor(model=>model.PersonFirstName)></th>
+        <th><@Html.DisplayNameFor(model=>model.PersonLastName)></th>
+        <th><@Html.DisplayNameFor(model=>model.PersonEmail)></th>
+        <th><@Html.DisplayNameFor(model=>model.PersonDateAdded)></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>@Html.DisplayFor(model => item.PersonFirstName)</td>
+        <td>@Html.DisplayFor(model => item.PersonLastName)</td>
+        <td>@Html.DisplayFor(model => item.PersonEmail)</td>
+        <td>@Html.DisplayFor(model => item.PersonDateAdded)</td>
+    </tr>
+    }
+
+</table>
+
+
