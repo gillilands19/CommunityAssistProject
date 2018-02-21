@@ -153,6 +153,7 @@
     <Compile Include="Controllers\BusinessRulesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\NewDonationController.cs" />
     <Compile Include="Controllers\RegistrationController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -201,6 +202,7 @@
       <DependentUpon>CommunityAssistModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Message.cs" />
+    <Compile Include="Models\NewDonation.cs" />
     <Compile Include="Models\NewPerson.cs" />
     <Compile Include="Models\Person.cs">
       <DependentUpon>CommunityAssistModel.tt</DependentUpon>
@@ -277,6 +279,8 @@
     <Content Include="Views\Registration\result.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Login\Result.cshtml" />
+    <Content Include="Views\NewDonation\Index.cshtml" />
+    <Content Include="Views\NewDonation\Result.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
