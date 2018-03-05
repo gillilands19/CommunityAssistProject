@@ -151,6 +151,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BusinessRulesController.cs" />
+    <Compile Include="Controllers\GrantApplicationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\NewDonationController.cs" />
@@ -281,6 +282,8 @@
     <Content Include="Views\Login\Result.cshtml" />
     <Content Include="Views\NewDonation\Index.cshtml" />
     <Content Include="Views\NewDonation\Result.cshtml" />
+    <Content Include="Views\GrantApplication\Index.cshtml" />
+    <Content Include="Views\GrantApplication\Result.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
